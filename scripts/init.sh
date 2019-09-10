@@ -25,6 +25,7 @@ fi
 
 rustup update stable
 rustup update nightly
+rustup target add wasm32-unknown-unknown
 rustup target add wasm32-unknown-unknown --toolchain nightly
 
 if [[ $(wasm-gc) ]]; then
