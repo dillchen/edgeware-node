@@ -182,7 +182,7 @@ pub fn edgeware_testnet_config_gensis() -> GenesisConfig {
 			proposal_creation_bond: 100 * DOLLARS,
 		}),
 		treasury_reward: Some(TreasuryRewardConfig {
-			current_payout: 158 * DOLLARS,
+			current_payout: 95 * DOLLARS,
 			minting_interval: One::one(),
 		}),
 	}
@@ -262,7 +262,7 @@ pub fn development_genesis(
 		]
 	});
 
-	const ENDOWMENT: Balance = 10_000_000 * DOLLARS;
+	const ENDOWMENT: Balance = 2_000_000_000 * DOLLARS;
 	const STASH: Balance = 100 * DOLLARS;
 	let desired_seats: u32 = (endowed_accounts.len() / 2 - initial_authorities.len()) as u32;
 
@@ -337,7 +337,7 @@ pub fn development_genesis(
 			proposal_creation_bond: 100 * DOLLARS,
 		}),
 		treasury_reward: Some(TreasuryRewardConfig {
-			current_payout: 158 * DOLLARS,
+			current_payout: 95 * DOLLARS,
 			minting_interval: One::one(),
 		}),
 	}

@@ -223,7 +223,7 @@ impl_opaque_keys! {
 
 parameter_types! {
 	// pub const Period: BlockNumber = 60 * MINUTES;
-	pub const Period: BlockNumber = 10;
+	pub const Period: BlockNumber = 50;
 	pub const Offset: BlockNumber = 0;
 }
 
@@ -244,6 +244,9 @@ impl session::historical::Trait for Runtime {
 }
 
 parameter_types! {
+	// Mainnet SessionsPerEra count
+	// pub const SessionsPerEra: sr_staking_primitives::SessionIndex = 12 ;
+	
 	pub const SessionsPerEra: sr_staking_primitives::SessionIndex = 2;
 	// number of eras to bond where eras are 1 hour long
 	// Mainnet genesis bonding duration
